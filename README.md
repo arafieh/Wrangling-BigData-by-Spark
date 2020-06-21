@@ -86,48 +86,48 @@ Data model, developed based on final datasets on following items:
 
 1. **U.S. Demographic by State**
 
-state: string (nullable = true)-Full state name
-state_code: string (nullable = true)-Abbreviated state code
-pct_veterans: double (nullable = true)-% Avg Veteran population per state
-pct_foreign_born: double (nullable = true)-% Avg Foreign-Born population per state
-native_american: double (nullable = true)-% Avg Native American population per state
-asian: double (nullable = true)-% Avg Asian population per state
-hispanic_latino: double (nullable = true)% Avg Hispanic or Latino population per state
-black: double (nullable = true)-% Avg Black population per state
-white: double (nullable = true)-% Avg White population per state
+- state: string (nullable = true)-Full state name
+- state_code: string (nullable = true)-Abbreviated state code
+- pct_veterans: double (nullable = true)-% Avg Veteran population per state
+- pct_foreign_born: double (nullable = true)-% Avg Foreign-Born population per state
+- native_american: double (nullable = true)-% Avg Native American population per state
+- asian: double (nullable = true)-% Avg Asian population per state
+- hispanic_latino: double (nullable = true)% Avg Hispanic or Latino population per state
+- black: double (nullable = true)-% Avg Black population per state
+- white: double (nullable = true)-% Avg White population per state
 
 2. **Immigration Data by State with Origin**
-year: integer (nullable = true)-Year of immigration
-month: integer (nullable = true)-Month of immigration
-origin_country: string (nullable = true)-Country of origin
-arriving_model: string (nullable = true)-How immigrant entered (Air, Land, Sea)
-visa_type: string (nullable = true)-Type of immigrant visa
-city_port_name: string (nullable = true)-City port name
-state_port_name: string (nullable = true)-State port name
-state_code: string (nullable = true)-Abbreviated destination state code
-dest_state_name: string (nullable = true)-State destination name
+- year: integer (nullable = true)-Year of immigration
+- month: integer (nullable = true)-Month of immigration
+- origin_country: string (nullable = true)-Country of origin
+- arriving_model: string (nullable = true)-How immigrant entered (Air, Land, Sea)
+- visa_type: string (nullable = true)-Type of immigrant visa
+- city_port_name: string (nullable = true)-City port name
+- state_port_name: string (nullable = true)-State port name
+- state_code: string (nullable = true)-Abbreviated destination state code
+- dest_state_name: string (nullable = true)-State destination name
 
 3. **Temperature Data by State**
 
-year: integer (nullable = true)- Temperature Year
-month: integer (nullable = true)- Temperature Month
-avg_temp_celsius: double (nullable = true)- Avg Temperature in Celsius per State
-state_code: string (nullable = true)-Abbreviated State Code
-State: string (nullable = true)-State Name
+- year: integer (nullable = true)- Temperature Year
+- month: integer (nullable = true)- Temperature Month
+- avg_temp_celsius: double (nullable = true)- Avg Temperature in Celsius per State
+- state_code: string (nullable = true)-Abbreviated State Code
+- State: string (nullable = true)-State Name
 
 4. **Fact Table**
 
-year: integer (nullable = true)-Year from immigration table
-immig_month: integer (nullable = true)-Month from immigration table
-immig_from: string (nullable = true)-Country of Origin from immigration table
-immig_state: string (nullable = true)-State immigrated to from immigration table
-immig_state_count: long (nullable = false)-Total count of people immigrated per state from immigration table
-pct_foreign_born: double (nullable = true)-Avg % foreign born from Demographic table
-native_american: double (nullable = true)-Avg % Native American population from Demographic table
-asian: double (nullable = true)-Avg % Asian population from Demographic table
-hispanic_latino: double (nullable = true)-% Avg Hispanic or Latino population per state from Demographic table
-black: double (nullable = true)-% Avg Black population per state from Demographic table
-white: double (nullable = true)-% Avg White population per state from Demographic table
+- year: integer (nullable = true)-Year from immigration table
+- immig_month: integer (nullable = true)-Month from immigration table
+- immig_from: string (nullable = true)-Country of Origin from immigration table
+- immig_state: string (nullable = true)-State immigrated to from immigration table
+- immig_state_count: long (nullable = false)-Total count of people immigrated per state from immigration table
+- pct_foreign_born: double (nullable = true)-Avg % foreign born from Demographic table
+- native_american: double (nullable = true)-Avg % Native American population from Demographic table
+- asian: double (nullable = true)-Avg % Asian population from Demographic table
+- hispanic_latino: double (nullable = true)-% Avg Hispanic or Latino population per state from Demographic table
+- black: double (nullable = true)-% Avg Black population per state from Demographic table
+- white: double (nullable = true)-% Avg White population per state from Demographic table
 
 
 #### Data Quality Checks
